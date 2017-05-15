@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER ManageIQ https://github.com/ManageIQ/manageiq-appliance-build
+MAINTAINER ManageIQ https://github.com/ManageIQ/container-ruby
 
 ## For ruby
 ENV RUBY_GEMS_ROOT=/opt/rubies/ruby-2.3.1/lib/ruby/gems/2.3.0 \
