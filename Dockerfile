@@ -3,6 +3,7 @@ MAINTAINER ManageIQ https://github.com/ManageIQ/container-ruby
 
 ## For ruby
 ENV RUBY_GEMS_ROOT=/opt/rubies/ruby-2.3.1/lib/ruby/gems/2.3.0 \
+    PATH=$PATH:/opt/rubies/ruby-2.3.1/bin \
     LANG=en_US.UTF-8
 
 # Install repos
