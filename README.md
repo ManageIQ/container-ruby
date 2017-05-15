@@ -1,2 +1,2 @@
-# manageiq-ruby-container
-Docker container containing the base ruby installation for ManageIQ
+# ManageIQ Ruby container
+Container with Ruby and built on CentOS, for ManageIQ
