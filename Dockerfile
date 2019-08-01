@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER ManageIQ https://github.com/ManageIQ/container-ruby
 
 ## For ruby
-ENV RUBY_GEMS_ROOT=/usr/local/lib/ruby/gems/2.4.0 \
+ENV RUBY_GEMS_ROOT=/usr/local/lib/ruby/gems/2.5.0 \
     LANG=en_US.UTF-8
 
 # Install repos
@@ -12,4 +12,4 @@ RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
 # Install ruby-install and make
 RUN yum -y install --setopt=tsflags=nodocs ruby-install make
 
-RUN ruby-install --system ruby 2.4.6 -- --disable-install-doc --enable-shared && rm -rf /usr/local/src/* && yum clean all
+RUN ruby-install --system ruby 2.5.5 -- --disable-install-doc --enable-shared && rm -rf /usr/local/src/* && yum clean all
