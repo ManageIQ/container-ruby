@@ -12,4 +12,4 @@ RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
 # Install ruby-install and make
 RUN yum -y install --setopt=tsflags=nodocs ruby-install make
 
-RUN ruby-install --system ruby 2.5.5 -- --disable-install-doc --enable-shared && rm -rf /usr/local/src/* && yum clean all
+RUN ruby-install --system ruby 2.5.7 -- --disable-install-doc --enable-shared && rm -rf /usr/local/src/* && yum clean all
